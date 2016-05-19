@@ -1,5 +1,5 @@
 /*
-//  Copyright (c) 2015 José Guerreiro. All rights reserved.
+//  Copyright (c) 2015 JosÃ© Guerreiro. All rights reserved.
 //
 //  MIT license, see http://www.opensource.org/licenses/mit-license.php
 //  
@@ -123,6 +123,7 @@ public class OutlineEffect : MonoBehaviour
             _camera.backgroundColor = new Color(0.0f, 0.0f, 0.0f, 0.0f);
             _camera.clearFlags = CameraClearFlags.SolidColor;
             _camera.cullingMask = LayerMask.GetMask("Outline");
+            _camera.rect = new Rect (0, 0, 1, 1);
 
             if (outlineRenderers != null)
             {
